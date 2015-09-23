@@ -1,15 +1,15 @@
-#!/bin/env bash
+#!/usr/bin/env bash
+
+git submodule update --init --recursive
 
 for f in *; do
 
-  if [["$(basename "$file")" == .* ]]; then
-    continue;
-  fi
+  file=$(basename "$f")
 
-  if [["$(basename "$file")" == "install" ]]; then
-    continue;
+  if [[ "$file" != .*  && "$file" != "install" ]]; then
+    cp -r -T $file ~/.$file;
   fi
-
-  cp -r $f ~/.$(basename $f);
 
 done
+
+vim +PluginInstall +qall
