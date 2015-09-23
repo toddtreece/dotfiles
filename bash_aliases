@@ -1,3 +1,8 @@
 alias giveup='sudo rm -rf /'
 alias shadow-disable='defaults write com.apple.screencapture disable-shadow -bool true && killall SystemUIServer'
 alias shadow-enable='defaults write com.apple.screencapture disable-shadow -bool false && killall SystemUIServer'
+alias accounts_start='cd ~/accounts && rails s -p 3000'
+alias io_rails='cd ~/io && rails s -p 3002'
+alias io_sidekiq='cd ~/io && bundle exec sidekiq'
+alias io_node='~/io/node/server'
+alias hipchat='which hipchat && hipchat --detach'
