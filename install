@@ -1,0 +1,15 @@
+#!/bin/env bash
+
+for f in *; do
+
+  if [["$(basename "$file")" == .* ]]; then
+    continue;
+  fi
+
+  if [["$(basename "$file")" == "install" ]]; then
+    continue;
+  fi
+
+  cp -r $f ~/.$(basename $f);
+
+done

@@ -1,0 +1,8 @@
+[user]
+	name = Todd Treece
+	email = toddtreece@gmail.com
+[push]
+	default = simple
+[core]
+	ignorecase = false
+	editor = /usr/bin/vim
