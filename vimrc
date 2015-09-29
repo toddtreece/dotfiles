@@ -9,6 +9,7 @@ Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'scrooloose/nerdtree'
 Plugin 'groenewege/vim-less'
 Plugin 'tpope/vim-surround'
+Plugin 'elzr/vim-json'
 call vundle#end()
 filetype plugin indent on
 
