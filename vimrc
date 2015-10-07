@@ -53,6 +53,10 @@ let mapleader = ","
 map <F2> :NERDTreeToggle<CR>
 map <F3> :call FindInNERDTree()<CR>
 
+let g:NERDTreeDirArrows = 1
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
+
 if &term =~ '256color'
    set t_ut=
 endif
